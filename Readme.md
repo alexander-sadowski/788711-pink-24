@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Александр Садовский](https://up.htmlacademy.ru/adaptive/24/user/788711).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
