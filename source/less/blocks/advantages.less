@@ -1,0 +1,63 @@
+.advantages {
+  padding-top: 18px;
+  text-align: center;
+}
+
+.advantages__header {
+  width: calc(100% - 40px);
+  max-width: @mobile-width-only;
+  .justify-box(auto; auto);
+}
+
+.advantages__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: @darkblue;
+}
+
+.advantages__wrapper {
+  padding-top: 66px;
+  background-color: @lightgrey;
+  background-image: url("../../img/bg-white-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.advantages__list {
+  width: calc(100% - 40px);
+  max-width: @mobile-width-only;
+  margin: 0;
+  .justify-box(auto; auto);
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 2px;
+  padding-top: 17px;
+  background-image: url("../img/iphone-screen-3.jpg"), url("../img/iphone.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom -7px, center bottom -43px;
+
+  &--mood {
+    background-image: none;
+  }
+
+  &--world {
+    background-image: none;
+  }
+
+  &--friends {
+    min-height: 423px;
+  }
+}
+
+.advantages__heading {
+  margin: 0;
+  font-size: 18px;
+  color: @black;
+}

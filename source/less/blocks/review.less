@@ -1,0 +1,29 @@
+.review {
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.review__author-name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: @black;
+}
+
+.review__author-info {
+  display: none;
+}
+
+.review__text {
+  margin-top: 11px;
+  margin-bottom: 11px;
+
+  &::before {
+    content: "«";
+  }
+
+  &::after {
+    content: "»";
+  }
+}

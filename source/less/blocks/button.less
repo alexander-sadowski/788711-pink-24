@@ -1,0 +1,95 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    padding: 15.5px 35px;
+    line-height: 18px;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+
+    &:hover {
+      color: @pink;
+      background-color: #ffffff;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px @pink;
+    }
+
+    &:active {
+      color: fade(@pink, 30%);
+    }
+  }
+
+  &--send {
+    color: @pink;
+    border-color: @pink;
+
+    &:hover {
+      color: #ffffff;
+      background-color: @pink;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px fade(@darkblue, 40%);
+    }
+
+    &:active {
+      color: fade(#ffffff, 30%);
+    }
+  }
+
+  &--cancel {
+    color: fade(@darkblue, 10%);
+    border-color: fade(@darkblue, 10%);
+
+    &:hover {
+      color: fade(@darkblue, 30%);
+      border-color: fade(@darkblue, 30%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px @pink;
+    }
+
+    &:active {
+      color: fade(#ffffff, 30%);
+      background-color: fade(@darkblue, 30%);
+    }
+  }
+
+  &--secondary {
+    max-width: 276px;
+    padding: 18px 38px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: @green;
+    border-radius: 1px;
+
+    &:hover {
+      background-color: @darkgreen;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px @pink;
+    }
+
+    &:active {
+      color: fade(#ffffff, 30%);
+    }
+
+    &:disabled {
+      background-color: @grey;
+      cursor: default;
+    }
+  }
+}
