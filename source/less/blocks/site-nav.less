@@ -1,21 +1,23 @@
-.site-navigation {
+.site-nav {
   display: flex;
   flex-direction: column;
   padding: 0;
   list-style: none;
 }
 
-.site-navigation__link {
+.site-nav__link {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  padding: 18.5px 10px;
+  padding: 14.5px 10px;
+  font-size: 18px;
+  line-height: 32px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: @darkblue;
-  border-top: 1px solid fade(#ffffff, 15%);
+  border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
 }

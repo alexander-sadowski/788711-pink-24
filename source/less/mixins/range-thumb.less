@@ -1,0 +1,18 @@
+.range-thumb () {
+  width: 14px;
+  height: 14px;
+  background-color: @white;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  appearance: none;
+  cursor: grab;
+
+  &:hover,
+  &:active {
+    background-color: @pink;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
