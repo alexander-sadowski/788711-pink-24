@@ -1,0 +1,46 @@
+.modal {
+  box-sizing: border-box;
+  width: 320px;
+  background-color: @white;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+}
+
+.modal__message-wrapper {
+  padding-top: 44px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  &--success {
+    padding-right: 27px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+  }
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @black;
+}
+
+.modal__description {
+  line-height: 24px;
+}
+
+.modal__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48.5px 22px;
+
+  &--success {
+    background-color: @lightgrey;
+  }
+
+  &--error {
+    padding-top: 26px;
+  }
+}

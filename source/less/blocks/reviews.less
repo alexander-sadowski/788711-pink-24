@@ -1,0 +1,35 @@
+.reviews {
+  padding-top: 39px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.reviews__wrapper {
+  overflow: hidden;
+  max-width: @mobile-width-only;
+  .justify-box(auto; auto);
+}
+
+.reviews__list {
+  display: flex;
+  width: 300%;
+}
+
+.reviews__item {
+  width: 100%;
+}
+
+.reviews__prev {
+  display: none;
+}
+
+.reviews__next {
+  display: none;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 100px);
+  .justify-box(auto; auto);
+}

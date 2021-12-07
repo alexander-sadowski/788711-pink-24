@@ -1,0 +1,32 @@
+.contact {
+  padding: 10px;
+  text-align: center;
+}
+
+.contact__heading {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.contact__info {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: @pink;
+  text-decoration: none;
+
+  &:hover {
+    color: @darkblue;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: @darkblue solid 2px;
+  }
+
+  &:active {
+    color: fade(@darkblue, 30%);
+  }
+}
