@@ -2,13 +2,123 @@
   display: none;
 }
 
-.research__title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: @black;
+@media (min-width: @tablet-width) {
+  .research {
+    display: flex;
+  }
+
+  .research__inner {
+    display: grid;
+    grid-template-columns: 238px minmax(300px, 565px);
+    .justify-box(auto; auto);
+    padding-top: 34px;
+    padding-right: 20px;
+    padding-bottom: 67px;
+    padding-left: 20px;
+
+    &::before,
+    &::after {
+      display: block;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 238px;
+      height: 276px;
+    }
+
+    &::before {
+      background-image: url("../../img/timer.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      content: "";
+    }
+
+    &::after {
+      box-sizing: border-box;
+      padding-top: 72px;
+      font-size: 96px;
+      line-height: 163px;
+      font-weight: 700;
+      color: @pink;
+      text-align: center;
+      content: "24";
+    }
+  }
+
+  .research__content {
+    grid-column: 2 / 2;
+    padding-top: 42px;
+    padding-right: 10px;
+    padding-left: 72px;
+  }
+
+  .research__title {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black;
+  }
+
+  .research__description {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .research__link {
+    display: inline-block;
+    color: @pink;
+  }
 }
 
-.research__link {
-  color: @pink;
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: @lightgrey;
+  }
+
+  .research__inner {
+    box-sizing: border-box;
+    width: 1200px;
+    grid-template-columns: 298px 640px;
+    padding-top: 50px;
+    padding-right: 130px;
+    padding-left: 130px;
+
+    &::before,
+    &::after {
+      width: 298px;
+      height: 345px;
+    }
+
+    &::after {
+      padding-top: 111px;
+      font-size: 120px;
+      line-height: 163px;
+    }
+  }
+
+  .research__content {
+    padding-top: 95px;
+    padding-right: 35px;
+  }
+
+  .research__title {
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+
+  .research__title br {
+    display: none;
+  }
+
+  .research__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__link {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

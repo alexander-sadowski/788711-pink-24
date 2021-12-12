@@ -111,3 +111,41 @@
 .tariffs-table__hidden-text {
   clip-path: inset(100%);
 }
+
+
+@media (min-width: @tablet-width) {
+  .tariffs-table__header {
+    &--empty {
+      visibility: hidden;
+      display: table-cell;
+    }
+  }
+
+  .tariffs-table__cell {
+    &--hidden {
+      display: table-cell;
+    }
+  }
+
+  .tariffs-table__feature {
+    justify-content: center;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs-table__title {
+    font-size: 18px;
+  }
+
+  .tariffs-table__price {
+    font-size: 24px;
+  }
+
+  .tariffs-table__cell {
+    font-size: 18px;
+  }
+}

@@ -20,4 +20,55 @@
   background-color: @darkblue;
   border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
+
+  &--current {
+    cursor: default;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-nav {
+    width: 689px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .site-nav__item {
+    margin-right: 20px;
+  }
+
+  .site-nav__link {
+    padding: 20px 25px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+
+    &:hover:not(&--current) {
+      color: @pink;
+    }
+
+    &:active:not(&--current) {
+      color: fade(@white, 30%);
+    }
+
+    &--current {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: 24px;
+        bottom: 0;
+        left: 24px;
+        display: block;
+        height: 2px;
+        background-color: @white;
+        content: "";
+      }
+    }
+  }
 }

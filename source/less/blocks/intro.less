@@ -1,14 +1,17 @@
 .intro {
   color: @white;
+  text-align: center;
   background-color: @charcoalblue;
 }
 
-.intro__header {
-  max-width: @mobile-width-only;
+.intro__wrapper {
   .justify-box(auto; auto);
-  min-height: 302px;
-  padding-top: 90px;
-  padding-bottom: 70px;
+}
+
+.intro__header {
+  min-height: 322px;
+  margin-bottom: 11px;
+  padding: 70px 20px;
   background-image: url("../img/phone.png"), url("../img/bg-intro.jpg");
   background-repeat: no-repeat;
   background-size: auto, auto;
@@ -16,10 +19,55 @@
 }
 
 .intro__title {
-  width: 280px;
-  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 0;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 300;
-  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    padding-top: 174px;
+    padding-bottom: 79px;
+  }
+
+  .intro__header {
+    box-sizing: border-box;
+    width: 340px;
+    min-height: 147px;
+    margin-bottom: 3px;
+    padding: 10px 47px;
+    background-image: none;
+  }
+
+  .intro__title {
+    font-size: 40px;
+  }
+
+  .intro__marketplace {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__wrapper {
+    box-sizing: border-box;
+    max-width: @desktop-width;
+    padding-left: 111px;
+  }
+
+  .intro__header {
+    margin-top: 5px;
+    margin-bottom: 9px;
+  }
+
+  .intro__title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .intro__marketplace {
+    margin-bottom: 11px;
+  }
 }
