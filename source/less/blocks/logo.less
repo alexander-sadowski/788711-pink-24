@@ -2,10 +2,48 @@
   text-decoration: none;
 }
 
-.logo__img--secondary {
-  display: none;
+.logo__img {
+  &--primary {
+    display: block;
+  }
+
+  &--secondary {
+    display: none;
+  }
+
+  &--tertiary {
+    display: none;
+  }
 }
 
-.logo__img--tertiary {
-  display: none;
+@media (min-width: @tablet-width) {
+  .logo__img {
+    &--primary {
+      display: none;
+    }
+
+    &--secondary {
+      display: block;
+    }
+
+    &--tertiary {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__img {
+    &--primary {
+      display: none;
+    }
+
+    &--secondary {
+      display: none;
+    }
+
+    &--tertiary {
+      display: block;
+    }
+  }
 }

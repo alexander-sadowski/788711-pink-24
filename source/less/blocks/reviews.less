@@ -1,35 +1,69 @@
 .reviews {
-  padding-top: 39px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 30px;
 }
 
 .reviews__wrapper {
-  overflow: hidden;
-  max-width: @mobile-width-only;
   .justify-box(auto; auto);
 }
 
 .reviews__list {
-  display: flex;
-  width: 300%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
-.reviews__item {
-  width: 100%;
-}
-
-.reviews__prev {
-  display: none;
-}
-
+.reviews__prev,
 .reviews__next {
   display: none;
 }
 
-.reviews__toggles {
-  display: flex;
-  justify-content: center;
-  width: calc(100% - 100px);
-  .justify-box(auto; auto);
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: 1200px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .reviews__list {
+    padding-right: 70px;
+    padding-left: 70px;
+
+    &::before {
+      display: block;
+      width: 79px;
+      height: 63px;
+      margin-top: 60px;
+      margin-bottom: 28px;
+      .justify-box(auto; auto);
+      background-image: url("../../img/quotes.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+    }
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: block;
+    position: absolute;
+    top: 50%;
+  }
+
+  .reviews__prev {
+    left: 130px;
+  }
+
+  .reviews__next {
+    right: 130px;
+  }
 }

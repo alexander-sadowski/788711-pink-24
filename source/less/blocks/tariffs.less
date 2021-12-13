@@ -1,5 +1,6 @@
 .tariffs {
-  padding-top: 84px;
+  padding-top: 110px;
+  padding-bottom: 30px;
   background-color: @lightgrey;
   background-image: url("../../img/bg-white-triangle.svg");
   background-repeat: no-repeat;
@@ -17,4 +18,24 @@
   justify-content: center;
   width: calc(100% - 100px);
   .justify-box(auto; auto);
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs {
+    padding-top: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs {
+    padding-top: 127px;
+    padding-bottom: 38px;
+  }
+
+  .tariffs__wrapper {
+    box-sizing: border-box;
+    width: 1200px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
 }

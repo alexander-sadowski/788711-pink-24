@@ -1,3 +1,21 @@
-.logo-dark__img--secondary {
-  display: none;
+.logo-dark__img {
+  &--primary {
+    display: block;
+  }
+
+  &--secondary {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-dark__img {
+    &--primary {
+      display: none;
+    }
+
+    &--secondary {
+      display: block;
+    }
+  }
 }
