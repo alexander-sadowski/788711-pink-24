@@ -1,7 +1,7 @@
 .form-fieldset {
   display: flex;
   flex-direction: column;
-  padding-top: 44px;
+  padding-top: 39px;
   padding-right: 22px;
   padding-bottom: 20px;
   padding-left: 22px;
@@ -9,6 +9,7 @@
 
   &--name {
     padding-top: 21px;
+    padding-bottom: 25px;
   }
 
   &--achivments,
@@ -36,4 +37,62 @@
 
 .form-fieldset__item {
   margin-bottom: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-fieldset {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid @grey;
+
+    &--name {
+      padding-right: 0;
+      padding-bottom: 5px;
+      padding-left: 0;
+      border: none;
+    }
+
+    &--achivments,
+    &--app {
+      background-color: transparent;
+    }
+  }
+
+  .form-fieldset__legend {
+    float: none;
+    line-height: 30px;
+  }
+
+  .form-fieldset__list {
+    &--name {
+      .form-fieldset__item {
+        margin-bottom: 56px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-fieldset {
+    box-sizing: border-box;
+    width: 100%;
+
+    &--name,
+    &--app {
+      width: 435px;
+    }
+
+    &--contacts {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form-fieldset__list {
+    &--contacts {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -11,3 +11,38 @@
   text-transform: uppercase;
   color: @pink;
 }
+
+@media (min-width: @tablet-width) {
+  .input-label {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .input-label__text {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 21px;
+  }
+
+  .input-label__input-field {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-label {
+    &--contacts {
+      flex-direction: column;
+      width: 371px;
+
+      .input-label__text {
+        order: 2;
+      }
+
+      .input-label__input-field {
+        box-sizing: border-box;
+        width: 100%;
+      }
+    }
+  }
+}

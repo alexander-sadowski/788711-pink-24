@@ -6,6 +6,7 @@
   margin-bottom: 44px;
   padding-top: 74px;
   padding-bottom: 24px;
+  background-color: @charcoalblue;
   background-image: url("../../img/bg-photogallery.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -13,8 +14,10 @@
 }
 
 .contest__title {
-  width: 250px;
+  max-width: 450px;
   .justify-box(auto; auto);
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
@@ -22,13 +25,62 @@
 }
 
 .contest__description {
-  margin-right: 20px;
-  margin-left: 20px;
+  max-width: 450px;
+  .justify-box(auto; auto);
+  padding-right: 20px;
+  padding-left: 20px;
   line-height: 30px;
 }
 
+.contest__description-text {
+  display: none;
+}
+
 .contest__form {
-  width: 100%;
-  max-width: @mobile-width-only;
   .justify-box(auto; auto);
+}
+
+@media (min-width: @tablet-width) {
+  .contest__title-wrapper {
+    margin-bottom: 91px;
+    padding-top: 135px;
+    padding-bottom: 18px;
+  }
+
+  .contest__title {
+    max-width: 748px;
+    .justify-box(auto; auto);
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .contest__description {
+    max-width: 756px;
+    padding-right: 85px;
+    padding-left: 85px;
+    font-size: 18px;
+  }
+
+  .contest__description-text {
+    display: inline;
+  }
+
+  .contest__form {
+    max-width: 748px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__title-wrapper {
+    padding-top: 127px;
+    padding-bottom: 48px;
+  }
+
+  .contest__title {
+    width: 748px;
+  }
+
+  .contest__form {
+    max-width: 1200px;
+  }
 }

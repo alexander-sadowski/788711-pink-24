@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 40px);
-  .justify-box(auto; auto);
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .feedback-form__button {
@@ -25,4 +25,65 @@
 
 .feedback-form__note {
   color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .feedback-form__fieldset {
+    margin-bottom: 51px;
+
+    &--name {
+      margin-bottom: 0;
+    }
+
+    &--app {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--achivments {
+      order: 4;
+    }
+
+    &--textarea {
+      order: 5;
+    }
+  }
+
+  .feedback-form__submit-wrapper {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 616px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .feedback-form__submit-wrapper {
+    width: 100%;
+  }
 }
