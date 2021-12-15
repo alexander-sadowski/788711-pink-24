@@ -1,16 +1,33 @@
+.photo-upload {
+  padding-top: 9px;
+}
+
 .photo-upload__header {
-  padding-top: 29px;
-  padding-bottom: 48px;
+  min-height: 126px;
+  .justify-box(auto, auto);
+  padding: 20px;
   line-height: 30px;
   text-align: center;
   background-color: @white;
 }
 
-.photo-upload__text {
-  width: calc(100% - 40px);
+.photo-upload__form {
   .justify-box(auto, auto);
 }
 
-.photo-upload__form {
-  .justify-box(auto, auto);
+@media (min-width: @tablet-width) {
+  .photo-upload {
+
+    padding-top: 28px;
+  }
+
+  .photo-upload__header {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-upload {
+    padding-top: 19px;
+  }
 }

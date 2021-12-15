@@ -55,12 +55,15 @@
         <div class="contest__title-wrapper">
           <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
-        <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="contest__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="contest__description-text">Пожалуйста, заполните форму ниже:</span>
+        </p>
       </header>
       <form class="contest__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="feedback-form__fieldset form-fieldset form-fieldset--name">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--name form-fieldset form-fieldset--name">
           <legend class="visually-hidden">ФИО</legend>
-          <ul class="form-fieldset__list">
+          <ul class="form-fieldset__list form-fieldset__list--name">
             <li class="form-fieldset__item">
               <label class="form-fieldset__input-label input-label">
                 <span class="input-label__text">Фамилия:</span>
@@ -81,7 +84,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset form-fieldset form-fieldset--achivments">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--achivments form-fieldset form-fieldset--achivments">
           <legend class="form-fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form-fieldset__list">
             <li class="form-fieldset__item">
@@ -128,24 +131,24 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset form-fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts form-fieldset">
           <legend class="form-fieldset__legend">Контактная информация</legend>
-          <ul class="form-fieldset__list">
+          <ul class="form-fieldset__list form-fieldset__list--contacts">
             <li class="form-fieldset__item">
-              <label class="form-fieldset__input-label input-label">
+              <label class="form-fieldset__input-label input-label input-label--contacts">
                 <span class="input-label__text">Номер телефона</span>
                 <input class="input-label__input-field input-field input-field--phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </label>
             </li>
             <li class="form-fieldset__item">
-              <label class="form-fieldset__input-label input-label">
+              <label class="form-fieldset__input-label input-label  input-label--contacts">
                 <span class="input-label__text">Адрес почты</span>
                 <input class="input-label__input-field input-field input-field--email" type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset form-fieldset form-fieldset--app">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--app form-fieldset form-fieldset--app">
           <legend class="form-fieldset__legend">С каким приложением путешествовали?</legend>
           <ul class="form-fieldset__list">
             <li class="form-fieldset__item">
@@ -171,7 +174,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset form-fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--textarea form-fieldset">
           <legend class="form-fieldset__legend">Опишите свои эмоции</legend>
           <label class="visually-hidden" for="feedback-message">Напишите здесь свою историю</label>
           <textarea class="input-field input-field--message" name="message" id="feedback-message">Можно прям в красках, не стесняясь в выражениях</textarea>
