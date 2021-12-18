@@ -15,11 +15,13 @@
 .page-footer__social {
   margin-top: 0;
   .justify-box(30px; 30px);
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content;
     width: 660px;
     padding-top: 36px;
     padding-bottom: 25px;
@@ -42,6 +44,7 @@
 
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
+
     width: 1200px;
     padding-top: 70px;
     padding-right: 130px;
@@ -50,6 +53,6 @@
   }
 
   .page-footer__social {
-    .justify-box(auto; auto);
+    .justify-box(auto; 238px);
   }
 }
