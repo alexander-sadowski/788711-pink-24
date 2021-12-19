@@ -7,4 +7,5 @@ navMain.classList.remove('main-nav--opened');
 
 navToggle.onclick = function() {
   navMain.classList.toggle('main-nav--opened');
+  navToggle.classList.toggle('main-nav__toggle--opened');
 };
