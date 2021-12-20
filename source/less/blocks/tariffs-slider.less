@@ -6,17 +6,29 @@
 }
 
 .tariffs-slider__table {
-  box-sizing: border-box;
-  width: 840px;
-  margin-bottom: 41px;
+  margin-bottom: 39px;
+
+  &--first-slide {
+    transform: translateX(276px);
+  }
+
+  &--third-slide {
+    transform: translateX(-276px);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .tariffs-slider__table {
-    width: 100%;
+    margin-bottom: 23px;
   }
 
   .tariffs-slider__toggles {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs-slider__table {
+    margin-bottom: 43px;
   }
 }
