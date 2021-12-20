@@ -1,28 +1,62 @@
 .form-fieldset {
   display: flex;
   flex-direction: column;
-  padding-top: 39px;
-  padding-right: 22px;
-  padding-bottom: 20px;
-  padding-left: 22px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
   border: none;
 
   &--name {
     padding-top: 21px;
-    padding-bottom: 25px;
   }
 
-  &--achivments,
-  &--app {
+  &--name,
+  &--contacts {
+    .form-fieldset__list {
+      gap: 17px;
+    }
+  }
+
+  &--app,
+  &--achivments {
     background-color: @lightgrey;
+  }
+
+  &--app {
+    .form-fieldset__legend {
+      margin-bottom: 34px;
+    }
+
+    .form-fieldset__list {
+      gap: 36px;
+    }
+  }
+
+  &--contacts {
+    .form-fieldset__legend {
+      display: none;
+    }
+  }
+
+  &--achivments {
+    .form-fieldset__list {
+      gap: 43px;
+    }
+  }
+
+  &--textarea {
+    .form-fieldset__legend {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .form-fieldset__legend {
   float: left;
-  margin-bottom: 42px;
-  padding-right: 18px;
-  padding-left: 18px;
+  margin-top: 14px;
+  margin-bottom: 38px;
+  padding: 0 18px;
   line-height: 18px;
   color: @pink;
   text-align: center;
@@ -30,45 +64,79 @@
 }
 
 .form-fieldset__list {
+  display: grid;
   margin: 0;
+  margin-bottom: 17px;
   padding: 0;
   list-style: none;
 }
 
-.form-fieldset__item {
-  margin-bottom: 19px;
-}
-
 @media (min-width: @tablet-width) {
   .form-fieldset {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 58px;
+    padding-left: 58px;
     border: 2px solid @grey;
 
     &--name {
       padding-right: 0;
-      padding-bottom: 5px;
       padding-left: 0;
       border: none;
+
+      .form-fieldset__list {
+        gap: 52px;
+      }
     }
 
-    &--achivments,
-    &--app {
+    &--app,
+    &--achivments {
       background-color: transparent;
+    }
+
+    &--app {
+      padding-bottom: 37px;
+
+      .form-fieldset__legend {
+        margin-bottom: 13px;
+        padding: 0 25px;
+      }
+    }
+
+    &--contacts {
+      padding-bottom: 10px;
+
+      .form-fieldset__legend {
+        display: block;
+        margin-bottom: 5px;
+        padding: 0 31px;
+      }
+
+      .form-fieldset__list {
+        gap: 29px;
+      }
+    }
+
+    &--achivments {
+      padding-bottom: 31px;
+
+      .form-fieldset__legend {
+        margin-bottom: 13px;
+        padding: 0 32px;
+      }
+    }
+
+    &--textarea {
+      padding-bottom: 51px;
+
+      .form-fieldset__legend {
+        margin-bottom: 6px;
+        padding: 0 39px;
+      }
     }
   }
 
   .form-fieldset__legend {
     float: none;
     line-height: 30px;
-  }
-
-  .form-fieldset__list {
-    &--name {
-      .form-fieldset__item {
-        margin-bottom: 56px;
-      }
-    }
   }
 }
 
@@ -77,22 +145,57 @@
     box-sizing: border-box;
     width: 100%;
 
-    &--name,
+    &--name {
+      width: 435px;
+    }
+
     &--app {
       width: 435px;
+      padding: 0;
+      padding-top: 38px;
+
+      .form-fieldset__legend {
+        width: 318px;
+        margin: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+
+      .form-fieldset__list {
+        margin-left: 72px;
+      }
     }
 
     &--contacts {
       flex-direction: row;
       flex-wrap: wrap;
+      padding-top: 23px;
+
+      .form-fieldset__list {
+        grid-template-columns: 375px 375px;
+        gap: 70px;
+        margin-bottom: 3px;
+      }
+    }
+
+    &--achivments {
+      .form-fieldset__list {
+        grid-template-columns: 259px 241px 209px;
+        column-gap: 55px;
+        margin-bottom: 24px;
+      }
+    }
+
+    &--textarea {
+      padding-bottom: 43px;
+
+      .form-fieldset__legend {
+        margin-bottom: 2px;
+      }
     }
   }
 
   .form-fieldset__list {
-    &--contacts {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+    width: 100%;
   }
 }

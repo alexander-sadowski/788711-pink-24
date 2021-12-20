@@ -1,5 +1,16 @@
 .button-reaction {
   width: 13px;
   height: 12px;
+  padding: 0;
   border: none;
+
+  .button-reaction__icon {
+    fill: @pink;
+  }
+
+  &:active {
+    .button-reaction__icon {
+      fill: fade(@pink, 30%);
+    }
+  }
 }

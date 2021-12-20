@@ -38,6 +38,7 @@
 
 .contest__form {
   .justify-box(auto; auto);
+  margin-bottom: 2px;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,10 +68,15 @@
 
   .contest__form {
     max-width: 748px;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contest__header {
+    margin-bottom: 32px;
+  }
+
   .contest__title-wrapper {
     padding-top: 127px;
     padding-bottom: 48px;
@@ -82,5 +88,6 @@
 
   .contest__form {
     max-width: 1200px;
+    margin-bottom: 0;
   }
 }

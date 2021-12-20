@@ -1,5 +1,5 @@
 .input-field {
-  padding: 12.5px 18px;
+  padding: 14.5px 20px;
   font-size: 18px;
   line-height: 30px;
   color: @darkblue;
@@ -14,7 +14,39 @@
   }
 
   &--message {
-    height: 197px;
+    height: 168px;
     font-family: inherit;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input-field {
+    &--phone,
+    &--email {
+      padding-right: 80px;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right;
+    }
+
+    &--phone {
+      background-image: url("../../img/phone-icon.svg");
+    }
+
+    &--email {
+      background-image: url("../../img/mail-icon.svg");
+    }
+
+    &--message {
+      height: 160px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-field {
+    &--message {
+      height: 95px;
+    }
   }
 }
