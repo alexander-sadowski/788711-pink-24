@@ -1,3 +1,37 @@
 .button-tool-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 47px;
+  padding: 0;
   border: none;
+
+  .button-tool-bar__icon {
+    fill: fade(@darkblue, 30%);
+  }
+
+  &--current {
+    .button-tool-bar__icon {
+      fill: @pink;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-tool-bar {
+    width: 24px;
+    height: 22px;
+
+    .button-tool-bar__icon {
+      fill: @pink;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-tool-bar {
+    width: 48px;
+    height: 44px;
+  }
 }
