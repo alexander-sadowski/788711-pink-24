@@ -8,10 +8,7 @@
   padding-bottom: 57px;
   padding-left: 20px;
   background-color: @charcoalblue;
-  background-image: url("../../img/bg-photogallery.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: top center;
+  .header-background();
 }
 
 .gallery__title {
@@ -77,6 +74,13 @@
   .gallery__header {
     padding-top: 127px;
     padding-bottom: 48px;
+    background-image: url("../../img/backgrounds/bg-desktop.jpg");
+    background-size: 2560px auto;
+    background-position: top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-desktop@2x.jpg");
+    }
   }
 
   .gallery__header-description {

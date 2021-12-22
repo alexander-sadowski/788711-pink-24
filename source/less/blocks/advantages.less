@@ -24,9 +24,9 @@
 .advantages__content-wrapper {
   padding-top: 87px;
   background-color: @lightgrey;
-  background-image: url("../../img/bg-white-triangle.svg");
+  background-image: url("../../img/backgrounds/bg-triangle-1-mobile.svg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto 96px;
   background-position: center top;
 }
 
@@ -53,11 +53,15 @@
     width: 157px;
     height: 304px;
     justify-self: center;
-    background-image: url("../img/iphone-screen-3.jpg"), url("../img/iphone.png");
+    background-image: url("../../img/phones/iphone-3.png");
     background-repeat: no-repeat;
-    background-size: 140px auto, 157px auto;
-    background-position: center bottom -6px, center bottom -43px;
+    background-size: 157px auto;
+    background-position: center bottom -45px;
     content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phones/iphone-3@2x.png");
+    }
   }
 
   &--mood,
@@ -92,6 +96,8 @@
 
   .advantages__content-wrapper {
     padding-top: 14px;
+    background-image: url("../../img/backgrounds/bg-triangle-1-tablet.svg");
+    background-size: auto;
   }
 
   .advantages__content {
@@ -105,11 +111,16 @@
       width: 268px;
       height: 481px;
       margin-right: 42px;
-      background-image: url("../img/iphone-screen-3.jpg"), url("../img/iphone.png");
+      background-image: url("../../img/phones/iphone-3-tablet.png");
       background-repeat: no-repeat;
-      background-size: auto, 268px 547px;
-      background-position: left 13px bottom -3px, center bottom -66px;
+      background-size: auto;
+      background-position: bottom -66px center;
       content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/phones/iphone-3-tablet@2x.png");
+        background-size: 268px auto;
+      }
     }
   }
 
@@ -144,6 +155,7 @@
 
   .advantages__content-wrapper {
     padding-top: 0;
+    background-size: contain;
   }
 
   .advantages__content {
@@ -172,9 +184,51 @@
       height: 307px;
       grid-row: 1 / 2;
       margin-bottom: 44px;
-      background-size: 165px auto, 186px auto;
-      background-position: center bottom -31px, center bottom -79px;
+      background-size: auto;
+      background-position: center bottom -81px, center bottom -13px;
       content: "";
+    }
+
+    &--mood {
+      &::after {
+        background-image: url("../../img/phones/iphone-1.png"), url("../../img/shadow.png");
+      }
+    }
+
+    &--world {
+      &::after {
+        background-image: url("../../img/phones/iphone-2.png"), url("../../img/shadow.png");
+      }
+    }
+
+    &--friends {
+      &::after {
+        background-image: url("../../img/phones/iphone-3.png"), url("../../img/shadow.png");
+      }
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background-size: 186px auto, 300px auto;
+      }
+
+      &--mood {
+        &::after {
+          background-image: url("../../img/phones/iphone-1@2x.png"), url("../../img/shadow@2x.png");
+        }
+      }
+
+      &--world {
+        &::after {
+          background-image: url("../../img/phones/iphone-2@2x.png"), url("../../img/shadow@2x.png");
+        }
+      }
+
+      &--friends {
+        &::after {
+          background-image: url("../../img/phones/iphone-3@2x.png"), url("../../img/shadow@2x.png");
+        }
+      }
     }
   }
 
