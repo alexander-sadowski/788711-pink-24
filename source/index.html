@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -60,19 +64,19 @@
           <ul class="marketplace__list marketplace-list">
             <li class="marketplace-list__item">
               <a class="marketplace-list__link marketplace-link" href="https://www.apple.com/ru/app-store/" target="_blank">
-                <img class="marketplace-link__image" src="img/apple-logo.png" width="47" height="56" alt="Логотип Apple.">
+                <img class="marketplace-link__image" src="img/logos/apple-logo.png" srcset="img/logos/apple-logo@2x.png 2x" width="47" height="56" alt="Логотип Apple.">
                 <span class="visually-hidden">Скачать приложение в App Store</span>
               </a>
             </li>
             <li class="marketplace-list__item">
               <a class="marketplace-list__link marketplace-link" href="https://play.google.com/store;?hl=ru&gl=RU" target="_blank">
-                <img class="marketplace-link__image" src="img/android-logo.png" width="43" height="47" alt="Логотип Android.">
+                <img class="marketplace-link__image" src="img/logos/android-logo.png" srcset="img/logos/android-logo@2x.png 2x" width="43" height="47" alt="Логотип Android.">
                 <span class="visually-hidden">Скачать приложение в Google Play</span>
               </a>
             </li>
             <li class="marketplace-list__item">
               <a class="marketplace-list__link marketplace-link" href="https://www.microsoft.com/ru-RU/store/apps" target="_blank">
-                <img class="marketplace-link__image" src="img/microsoft-logo.png" width="44" height="41" alt="Логотип Microsoft.">
+                <img class="marketplace-link__image" src="img/logos/microsoft-logo.png" srcset="img/logos/microsoft-logo@2x.png 2x" width="44" height="41" alt="Логотип Microsoft.">
                 <span class="visually-hidden">Скачать приложение в Microsoft Store</span>
               </a>
             </li>
@@ -275,7 +279,11 @@
         </div>
       </div>
       <div class="contacts__map map">
-        <img class="map__image" src="img/map.png" width="320" height="200" alt="Карта.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 599px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x" width="320" height="200" alt="Карта.">
+        </picture>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab5cb1bad80df13c467c017196dfea8a0d03047631ac6d14bf3de2ac175a366d5&amp;source=constructor" width="320" height="240" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
       </div>
     </section>

@@ -8,10 +8,10 @@
     top: 0;
     width: 100%;
     height: 33px;
-    background-image: url("../img/bg-white-triangle-map.svg");
+    background-image: url("../../img/backgrounds/bg-triangle-3-mobile.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
+    background-size: 1200px auto;
+    background-position: top -90px center;
     content: "";
   }
 }
@@ -25,29 +25,40 @@
   object-fit: cover;
 }
 
-.map__image {
+.map picture {
   grid-column: 1 / 1;
   grid-row: 1 / 2;
+}
+
+.map__image {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 374px;
   object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    height: 374px;
+    &::before {
+      height: 70px;
+      background-position: top -55px center;
+    }
+  }
+
+  .map__image {
+    max-height: 502px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     width: 1200px;
-    height: 502px;
-  }
 
-  .map__image {
-    max-height: 502px;
+    &::before {
+      height: 103px;
+      background-image: url("../../img/backgrounds/bg-triangle-3-desktop.svg");
+      background-size: 1439px auto;
+      background-position: top -20px center;
+    }
   }
 }
