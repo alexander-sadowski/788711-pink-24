@@ -4,6 +4,24 @@
   align-items: center;
   width: 56px;
   height: 56px;
+  border-radius: 3px;
+
+  &:hover {
+    .marketplace-link__image {
+      opacity: 0.8;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @white;
+    outline: none;
+  }
+
+  &:active {
+    .marketplace-link__image {
+      opacity: 0.6;
+    }
+  }
 }
 
 .marketplace-link__image {

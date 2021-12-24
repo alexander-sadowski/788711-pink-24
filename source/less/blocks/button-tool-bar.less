@@ -6,6 +6,7 @@
   height: 47px;
   padding: 0;
   border: none;
+  border-radius: 3px;
 
   .button-tool-bar__icon {
     fill: fade(@darkblue, 30%);
@@ -15,6 +16,17 @@
     .button-tool-bar__icon {
       fill: @pink;
     }
+  }
+
+  &:hover {
+    .button-tool-bar__icon {
+      fill: fade(@darkblue, 50%);
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @darkblue;
+    outline: none;
   }
 }
 

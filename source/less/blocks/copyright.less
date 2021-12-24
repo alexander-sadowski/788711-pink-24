@@ -1,16 +1,38 @@
 .copyright {
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
-  margin-top: 9px;
   line-height: 18px;
   font-weight: 400;
-  margin-right: 12px;
+  margin-right: 6px;
+}
+
+.copyright__link {
+  padding: 5px;
+  border-radius: 3px;
+
+  &:hover {
+    .copyright__img {
+      fill: @darkblue;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @darkblue;
+  }
+
+  &:active {
+    .copyright__img {
+      fill: fade(@darkblue, 30%);
+    }
+  }
 }
 
 .copyright__img {
   display: block;
+  fill: @pink;
 }
 
 @media (min-width: @desktop-width) {

@@ -20,6 +20,21 @@
   height: 56px;
   border: 3px solid fade(@darkblue, 10%);
   border-radius: 50%;
+
+  &:hover {
+    border-color: @darkblue;
+  }
+
+  &:focus {
+    border-color: @darkblue;
+    outline: none;
+  }
+
+  &:active {
+    .social__icon {
+      fill: fade(@pink, 30%);
+    }
+  }
 }
 
 .social__icon {
