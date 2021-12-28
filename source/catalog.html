@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Пинк: Фотографии пользователей</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
@@ -18,13 +18,13 @@
     <nav class="page-header__nav main-nav main-nav--opened">
       <a class="page-header__logo logo" href="index.html" aria-label="Логотип сайта Pink">
         <svg class="logo__img logo__img--primary" width="74" height="23" role="img">
-          <use href="img/svg/sprite.svg#logo"></use>
+          <use href="img/svg/logos/logo.svg#logo-primary"></use>
         </svg>
         <svg class="logo__img logo__img--secondary" width="145" height="40" role="img">
-          <use href="img/svg/sprite.svg#logo-secondary"></use>
+          <use href="img/svg/logos/logo.svg#logo-secondary"></use>
         </svg>
         <svg class="logo__img logo__img--tertiary" width="147" height="40" role="img">
-          <use href="img/svg/sprite.svg#logo-tertiary"></use>
+          <use href="img/svg/logos/logo.svg#logo-tertiary"></use>
         </svg>
       </a>
       <ul class="main-nav__list site-nav">
@@ -94,6 +94,12 @@
           <h2 class="visually-hidden">Фото от пользователя Левон</h2>
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.avif 1x, img/gallery/photo-1-desktop@2x.avif 2x">
+              <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/photo-1-tablet.avif 1x, img/gallery/photo-1-tablet@2x.avif 2x">
+              <source type="image/avif" srcset="img/gallery/photo-1-mobile.avif 1x, img/gallery/photo-1-mobile@2x.avif 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя Левон.">
@@ -122,6 +128,12 @@
           <h2 class="visually-hidden">Фото от пользователя Антон</h2>
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.avif 1x, img/gallery/photo-2-desktop@2x.avif 2x">
+              <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/photo-2-tablet.avif 1x, img/gallery/photo-2-tablet@2x.avif 2x">
+              <source type="image/avif" srcset="img/gallery/photo-2-mobile.avif 1x, img/gallery/photo-2-mobile@2x.avif 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя Антон.">
@@ -150,6 +162,12 @@
           <h2 class="visually-hidden">Фото от пользователя Борис</h2>
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.avif 1x, img/gallery/photo-3-desktop@2x.avif 2x">
+              <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/photo-3-tablet.avif 1x, img/gallery/photo-3-tablet@2x.avif 2x">
+              <source type="image/avif" srcset="img/gallery/photo-3-mobile.avif 1x, img/gallery/photo-3-mobile@2x.avif 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя Борис.">
@@ -178,6 +196,12 @@
           <h2 class="visually-hidden">Фото от пользователя Сергей</h2>
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.avif 1x, img/gallery/photo-4-desktop@2x.avif 2x">
+              <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/photo-4-tablet.avif 1x, img/gallery/photo-4-tablet@2x.avif 2x">
+              <source type="image/avif" srcset="img/gallery/photo-4-mobile.avif 1x, img/gallery/photo-4-mobile@2x.avif 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-4-mobile.webp 1x, img/gallery/photo-4-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/gallery/photo-4-mobile.jpg" srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя Сергей.">
@@ -206,6 +230,12 @@
           <h2 class="visually-hidden">Фото от пользователя Максим</h2>
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/photo-5-desktop.avif 1x, img/gallery/photo-5-desktop@2x.avif 2x">
+              <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/photo-5-tablet.avif 1x, img/gallery/photo-5-tablet@2x.avif 2x">
+              <source type="image/avif" srcset="img/gallery/photo-5-mobile.avif 1x, img/gallery/photo-5-mobile@2x.avif 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-5-desktop.webp 1x, img/gallery/photo-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-5-tablet.webp 1x, img/gallery/photo-5-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-5-mobile.webp 1x, img/gallery/photo-5-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-5-desktop.jpg 1x, img/gallery/photo-5-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-5-tablet.jpg 1x, img/gallery/photo-5-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/gallery/photo-5-mobile.jpg" srcset="img/gallery/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя Максим.">
@@ -234,6 +264,12 @@
           <h2 class="visually-hidden">Фото от пользователя Надежда</h2>
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/photo-6-desktop.avif 1x, img/gallery/photo-6-desktop@2x.avif 2x">
+              <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/photo-6-tablet.avif 1x, img/gallery/photo-6-tablet@2x.avif 2x">
+              <source type="image/avif" srcset="img/gallery/photo-6-mobile.avif 1x, img/gallery/photo-6-mobile@2x.avif 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-6-desktop.webp 1x, img/gallery/photo-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-6-tablet.webp 1x, img/gallery/photo-6-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-6-mobile.webp 1x, img/gallery/photo-6-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-6-desktop.jpg 1x, img/gallery/photo-6-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-6-tablet.jpg 1x, img/gallery/photo-6-tablet@2x.jpg 2x">
               <img class="photo__image" src="img/gallery/photo-6-mobile.jpg" srcset="img/gallery/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя Надежда.">
@@ -266,7 +302,11 @@
         <p class="photo-upload__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <form class="photo-upload__form photo-editor" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
-        <img class="photo-editor__image" src="img/gallery/upload-image.jpg" srcset="img/gallery/upload-image@2x.jpg 2x" width="280" height="374" alt="Зимняя дорога.">
+        <picture>
+          <source type="image/avif" srcset="img/gallery/upload-image.avif 1x, img/gallery/upload-image@2x.avif 2x">
+          <source type="image/webp" srcset="img/gallery/upload-image.webp 1x, img/gallery/upload-image@2x.webp 2x">
+          <img class="photo-editor__image" src="img/gallery/upload-image.jpg" srcset="img/gallery/upload-image@2x.jpg 2x" width="280" height="374" alt="Зимняя дорога.">
+        </picture>
         <label class="visually-hidden">Выбрать фотографию
           <input type="file" name="upload-field">
         </label>
@@ -324,10 +364,10 @@
       <div class="page-footer__logo">
         <a class="logo logo--dark" href="index.html" aria-label="Логотип сайта Pink">
           <svg class="logo__img logo__img--secondary" width="145" height="40" role="img">
-            <use href="img/svg/sprite.svg#logo-secondary"></use>
+            <use href="img/svg/logos/logo.svg#logo-secondary"></use>
           </svg>
           <svg class="logo__img logo__img--tertiary" width="147" height="40" role="img">
-            <use href="img/svg/sprite.svg#logo-tertiary"></use>
+            <use href="img/svg/logos/logo.svg#logo-tertiary"></use>
           </svg>
         </a>
       </div>
