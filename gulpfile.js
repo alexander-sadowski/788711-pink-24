@@ -48,7 +48,7 @@ const scripts = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/phones/*'])
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
     .pipe(gulp.dest(function (file) {
@@ -59,6 +59,29 @@ const optimizeImages = () => {
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest(function (file) {
+      return file.base;
+    }));
+}
+
+const quantizePNG= () => {
+  return gulp.src('source/img/phones/*.png')
+  .pipe(
+    squoosh(
+      {
+        oxipng: {
+          level: 6,
+        },
+      },
+      {
+        quant: {
+          enabled: true,
+          numColors: 255,
+        },
+      }
+    )
+  )
+    .pipe(gulp.dest('build/img/phones'))
     .pipe(gulp.dest(function (file) {
       return file.base;
     }));
@@ -178,6 +201,7 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
+    quantizePNG,
     createWebp,
     createAvif
   ),
@@ -195,6 +219,7 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
+    quantizePNG,
     createWebp,
     createAvif
   ),

@@ -25,6 +25,27 @@
   }
 }
 
+.photo__link {
+  &:hover {
+    .photo__image {
+      opacity: 0.9;
+    }
+  }
+
+  &:focus {
+    .photo__image {
+      box-shadow: 0 0 0 2px @darkblue;
+      outline: none;
+    }
+  }
+
+  &:active {
+    .photo__image {
+      opacity: 0.6;
+    }
+  }
+}
+
 .photo__image {
   display: block;
   width: 100%;

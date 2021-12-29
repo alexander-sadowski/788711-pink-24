@@ -8,6 +8,19 @@
   &--radio {
     padding-left: 70px;
   }
+
+  &:hover {
+    .control__mark {
+      border-color: @darkblue;
+      transition: border-color 0.3s;
+    }
+  }
+
+  &:active {
+    .control__mark {
+      border-color: @pink;
+    }
+  }
 }
 
 .control__mark {
@@ -21,8 +34,12 @@
   border: 2px solid @grey;
 }
 
+.control__input:focus + .control__mark {
+  border-color: @darkblue;
+}
+
 .control__input[type="checkbox"] + .control__mark {
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .control__input[type="radio"] + .control__mark {

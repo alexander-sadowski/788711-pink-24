@@ -68,6 +68,21 @@
   .research__link {
     display: inline-block;
     color: @pink;
+    border-radius: 3px;
+
+    &:hover {
+      color: @darkblue;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px @darkblue;
+      outline: none;
+    }
+
+    &:active {
+      color: fade(@darkblue, 30%);
+      text-decoration: none;
+    }
   }
 }
 

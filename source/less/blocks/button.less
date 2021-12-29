@@ -22,11 +22,13 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 3px @pink;
+      box-shadow: 0 0 0 2px @pink;
+      outline: none;
     }
 
     &:active {
       color: fade(@pink, 30%);
+      background-color: @white;
     }
   }
 
@@ -40,11 +42,12 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 3px fade(@darkblue, 40%);
+      box-shadow: 0 0 0 2px fade(@darkblue, 40%);
     }
 
     &:active {
       color: fade(@white, 30%);
+      background-color: @pink;
     }
   }
 
@@ -58,7 +61,7 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 3px @pink;
+      box-shadow: 0 0 0 2px @pink;
     }
 
     &:active {
@@ -79,11 +82,12 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 3px @pink;
+      box-shadow: 0 0 0 2px @pink;
     }
 
     &:active {
       color: fade(@white, 30%);
+      background-color: @darkgreen;
     }
 
     &:disabled {
