@@ -4,7 +4,7 @@
   line-height: 30px;
   color: @darkblue;
   border: 2px solid @grey;
-  border-radius: 1px;
+  border-radius: 3px;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -16,6 +16,20 @@
   &--message {
     height: 168px;
     font-family: inherit;
+  }
+
+  &:hover {
+    border-color: @darkblue;
+    transition: border-color 0.3s;
+  }
+
+  &:focus {
+    border-color: @darkblue;
+    outline: none;
+  }
+
+  &:active {
+    border-color: @pink;
   }
 }
 

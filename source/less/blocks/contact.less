@@ -11,11 +11,13 @@
 }
 
 .contact__info {
+  display: block;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   color: @pink;
   text-decoration: none;
+  border-radius: 3px;
 
   &:hover {
     color: @darkblue;
@@ -23,11 +25,13 @@
   }
 
   &:focus {
-    outline: @darkblue solid 2px;
+    box-shadow: 0 0 0 2px @darkblue;
+    outline: none;
   }
 
   &:active {
     color: fade(@darkblue, 30%);
+    text-decoration: none;
   }
 }
 

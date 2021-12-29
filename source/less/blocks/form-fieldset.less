@@ -71,6 +71,32 @@
   list-style: none;
 }
 
+.form-fieldset__item {
+  &--shark {
+    order: 1;
+  }
+
+  &--norris {
+    order: 3;
+  }
+
+  &--tower {
+    order: 5;
+  }
+
+  &--souvenir {
+    order: 4;
+  }
+
+  &--hotel {
+    order: 6;
+  }
+
+  &--beach {
+    order: 2;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .form-fieldset {
     padding-right: 58px;
@@ -197,5 +223,9 @@
 
   .form-fieldset__list {
     width: 100%;
+  }
+
+  .form-fieldset__item {
+    order: unset;
   }
 }

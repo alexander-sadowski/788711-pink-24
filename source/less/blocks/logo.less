@@ -1,7 +1,7 @@
 .logo {
   display: block;
   width: 74px;
-  padding: 23px 0;
+  padding: 23px 10px;
   text-decoration: none;
   color: @white;
   --stars-color: @pink;
@@ -31,7 +31,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px @white;
+    box-shadow: 0 0 0 2px @white inset;
     outline: none;
   }
 
@@ -46,8 +46,10 @@
 
 .logo--dark {
   width: 145px;
+  padding: 10px;
   color: @darkblue;
   --stars-color: @darkblue;
+  border-radius: 3px;
 
   .logo__img {
     fill: @pink;
@@ -101,6 +103,10 @@
         display: none;
       }
     }
+  }
+
+  .logo--dark {
+    padding: 10px;
   }
 }
 

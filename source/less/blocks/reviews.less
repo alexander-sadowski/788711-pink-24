@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   line-height: 30px;
 }
@@ -10,7 +10,7 @@
 
 .reviews__list {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   padding: 0;
 }
 
@@ -21,6 +21,11 @@
 @media (min-width: @tablet-width) {
   .reviews {
     padding-top: 12px;
+    padding-bottom: 13px;
+  }
+
+  .reviews__list {
+    margin-bottom: 10px;
   }
 }
 
@@ -65,6 +70,7 @@
     width: 50px;
     height: 70px;
     border: none;
+    border-radius: 3px;
     background-color: transparent;
 
     &--prev {
@@ -84,6 +90,11 @@
       .reviews__arrow-icon {
         opacity: 0.6;
       }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px @darkblue;
+      outline: none;
     }
 
     &:active {
