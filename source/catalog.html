@@ -11,6 +11,9 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -59,13 +62,13 @@
         <h2 class="visually-hidden">Панорама дня от пользователя Анна</h2>
         <a class="photo__link" href="#">
           <picture>
-            <source type="image/avif" media="(min-width: 1200px)" srcset="img/gallery/panorama-desktop.avif 1x, img/gallery/panorama-desktop@2x.avif 2x">
+            <source type="image/avif" media="(min-width: 768px)" srcset="img/gallery/panorama-desktop.avif 1x, img/gallery/panorama-desktop@2x.avif 2x">
             <source type="image/avif" media="(min-width: 660px)" srcset="img/gallery/panorama-tablet.avif 1x, img/gallery/panorama-tablet@2x.avif 2x">
             <source type="image/avif" srcset="img/gallery/panorama-mobile.avif 1x, img/gallery/panorama-mobile@2x.avif 2x">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/panorama-desktop.webp 1x, img/gallery/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/panorama-desktop.webp 1x, img/gallery/panorama-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/panorama-tablet.webp 1x, img/gallery/panorama-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/gallery/panorama-mobile.webp 1x, img/gallery/panorama-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/gallery/panorama-desktop.jpg 1x, img/gallery/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gallery/panorama-desktop.jpg 1x, img/gallery/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/gallery/panorama-tablet.jpg 1x, img/gallery/panorama-tablet@2x.jpg 2x">
             <img class="photo__image photo__image--featured-photo" src="img/gallery/panorama-mobile.jpg" srcset="img/gallery/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото от пользователя Анна.">
           </picture>

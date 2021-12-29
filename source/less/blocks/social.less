@@ -1,14 +1,9 @@
 .social {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 181px;
+  display: grid;
+  grid-template-columns: repeat(3, 54px);
+  gap: 8px;
   padding: 0;
   list-style: none;
-}
-
-.social__item {
-  margin-bottom: 10px;
 }
 
 .social__link {
@@ -16,8 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border: 3px solid fade(@darkblue, 10%);
   border-radius: 50%;
 
