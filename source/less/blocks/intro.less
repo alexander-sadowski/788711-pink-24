@@ -4,8 +4,8 @@
   background-color: @charcoalblue;
 }
 
-.intro__wrapper {
-  .justify-box(auto; auto);
+.intro__inner {
+  margin: 0 auto;
 }
 
 .intro__header {
@@ -69,10 +69,6 @@
     font-size: 40px;
     line-height: 48px;
   }
-
-  .intro__marketplace {
-    width: 300px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -86,7 +82,7 @@
     }
   }
 
-  .intro__wrapper {
+  .intro__inner {
     box-sizing: border-box;
     max-width: @desktop-width;
     padding-left: 111px;

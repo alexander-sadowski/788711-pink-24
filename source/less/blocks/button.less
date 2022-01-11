@@ -9,6 +9,20 @@
   border: none;
   cursor: pointer;
 
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled,
+  &:disabled:hover,
+  &--disabled:hover {
+    color: @white;
+    background-color: @grey;
+    border-color: fade(@darkblue, 10%);
+    cursor: not-allowed;
+  }
+
   &--primary {
     padding: 15.5px 35px;
     line-height: 18px;
@@ -22,8 +36,11 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px @pink;
-      outline: none;
+      outline: 2px solid @pink;
+    }
+
+    &:focus-visible {
+      outline: 2px solid @pink;
     }
 
     &:active {
@@ -42,7 +59,11 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px fade(@darkblue, 40%);
+      outline: 2px solid fade(@darkblue, 50%);
+    }
+
+    &:focus-visible {
+      outline: 2px solid fade(@darkblue, 50%);
     }
 
     &:active {
@@ -61,7 +82,11 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px @pink;
+      outline: 2px solid @pink;
+    }
+
+    &:focus-visible {
+      outline: 2px solid @pink;
     }
 
     &:active {
@@ -82,17 +107,16 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px @pink;
+      outline: 2px solid @pink;
+    }
+
+    &:focus-visible {
+      outline: 2px solid @pink;
     }
 
     &:active {
       color: fade(@white, 30%);
       background-color: @darkgreen;
-    }
-
-    &:disabled {
-      background-color: @grey;
-      cursor: default;
     }
   }
 

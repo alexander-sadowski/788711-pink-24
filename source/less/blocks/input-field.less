@@ -1,5 +1,8 @@
 .input-field {
+  box-sizing: border-box;
+  width: 100%;
   padding: 14.5px 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: @darkblue;
@@ -11,11 +14,14 @@
     font-size: 18px;
     line-height: 30px;
     color: @darkblue;
+    opacity: 1;
   }
 
   &--message {
-    height: 168px;
+    display: block;
+    height: 201px;
     font-family: inherit;
+    resize: vertical;
   }
 
   &:hover {
@@ -31,6 +37,23 @@
   &:active {
     border-color: @pink;
   }
+
+  &:focus:invalid {
+    background-color: fade(@pink, 30%);
+  }
+
+  &:disabled,
+  &--disabled,
+  &:disabled:hover,
+  &--disabled:hover {
+    color: fade(@darkblue, 20%);
+    background-color: @white;
+    border-color: fade(@darkblue, 10%);
+  }
+
+  &:disabled::placeholder {
+    color: fade(@darkblue, 20%);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -39,8 +62,8 @@
     &--email {
       padding-right: 80px;
       background-repeat: no-repeat;
-      background-size: auto;
-      background-position: right;
+      background-size: 59px auto;
+      background-position: center right;
     }
 
     &--phone {
@@ -52,15 +75,17 @@
     }
 
     &--message {
-      height: 160px;
+      height: 193px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .input-field {
+    min-width: 200px;
+
     &--message {
-      height: 95px;
+      height: 128px;
     }
   }
 }

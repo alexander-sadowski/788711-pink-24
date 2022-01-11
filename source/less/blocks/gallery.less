@@ -36,7 +36,7 @@
   display: grid;
   justify-content: center;
   gap: 20px;
-  .justify-box(auto; auto);
+  margin: 0 auto;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -72,8 +72,8 @@
 
 @media (min-width: @desktop-width) {
   .gallery__header {
-    padding-top: 127px;
-    padding-bottom: 48px;
+    padding-top: 169px;
+    padding-bottom: 69px;
     background-image: url("../img/backgrounds/bg-desktop.jpg");
     background-size: 2560px auto;
     background-position: top center;
@@ -81,6 +81,12 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/bg-desktop@2x.jpg");
     }
+  }
+
+  .gallery__title {
+    width: 748px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .gallery__header-description {

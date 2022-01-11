@@ -5,7 +5,7 @@
 }
 
 .reviews__wrapper {
-  .justify-box(auto; auto);
+  margin: 0 auto;
 }
 
 .reviews__list {
@@ -51,9 +51,9 @@
       display: block;
       width: 79px;
       height: 63px;
+      margin: 0 auto;
       margin-top: 60px;
       margin-bottom: 28px;
-      .justify-box(auto; auto);
       background-image: url("../img/svg/icons/quotes.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -87,14 +87,23 @@
     }
 
     &:hover {
+      cursor: pointer;
+
       .reviews__arrow-icon {
         opacity: 0.6;
       }
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px @darkblue;
+      outline: 2px solid @darkblue;
+    }
+
+    &:focus:not(:focus-visible) {
       outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid @darkblue;
     }
 
     &:active {

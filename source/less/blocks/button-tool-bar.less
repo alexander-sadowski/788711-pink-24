@@ -20,14 +20,25 @@
   }
 
   &:hover {
+    cursor: pointer;
+
     .button-tool-bar__icon {
       fill: fade(@darkblue, 50%);
     }
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px @darkblue;
+    outline: 2px solid @darkblue;
+    outline-offset: 5px;
+  }
+
+  &:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @darkblue;
+    outline-offset: 5px;
   }
 }
 

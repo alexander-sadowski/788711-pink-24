@@ -6,6 +6,10 @@
 .feedback-form__fieldset {
   margin: 0;
 
+  &--name {
+    margin-bottom: 22px;
+  }
+
   &--app {
     order: 4;
   }
@@ -16,27 +20,31 @@
 
   &--achivments {
     order: 2;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
   }
 
   &--textarea {
     order: 5;
+    margin-bottom: 13px;
   }
 }
 
 .feedback-form__submit-wrapper {
   order: 6;
-  display: grid;
-  gap: 20px;
-  margin-top: 23px;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.feedback-form__button {
+  margin-bottom: 20px;
 }
 
 .feedback-form__text {
-  justify-self: center;
+  margin-bottom: 1px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feedback-form__note {
@@ -49,41 +57,49 @@
 
 @media (min-width: @tablet-width) {
   .feedback-form {
-    padding: 33px 20px;
+    padding: 40px 20px;
+    padding-bottom: 33px;
   }
 
   .feedback-form__fieldset {
-    &--name {
-      margin-bottom: 10px;
-    }
+    margin-bottom: 58px;
 
-    &--app,
-    &--achivments,
-    &--contacts {
-      margin-bottom: 52px;
+    &--name {
+      margin-bottom: 38px;
     }
 
     &--app {
       order: 2;
     }
 
+    &--contacts {
+      order: 3;
+    }
+
     &--achivments {
       order: 4;
+    }
+
+    &--textarea {
+      order: 5;
+      margin-bottom: 51px;
     }
   }
 
   .feedback-form__submit-wrapper {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    align-items: start;
-    margin-top: 66px;
-    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+
+  .feedback-form__button {
+    min-width: 300px;
+    margin: 0;
   }
 
   .feedback-form__text {
-    grid-column: 2 / 3;
     margin-top: 17px;
-    margin-left: auto;
   }
 }
 
@@ -99,9 +115,25 @@
     padding-left: 130px;
   }
 
+  .feedback-form__fieldset {
+    margin-bottom: 57px;
+
+    &--name {
+      margin-bottom: 0;
+    }
+
+    &--app {
+      margin-top: 6px;
+    }
+
+    &--textarea {
+      margin-bottom: 50px;
+    }
+  }
+
   .feedback-form__submit-wrapper {
     width: 100%;
-    margin-top: 65px;
+    padding-bottom: 0;
   }
 
   .feedback-form__text-hidden {

@@ -9,6 +9,12 @@
     padding-left: 70px;
   }
 
+  &:hover .control__input[type="checkbox"]:disabled + .control__mark,
+  &:hover .control__input[type="radio"]:disabled + .control__mark {
+    border-color: @grey;
+    cursor: not-allowed;
+  }
+
   &:hover {
     .control__mark {
       border-color: @darkblue;
@@ -69,6 +75,19 @@
   background-color: @pink;
   border-radius: 50%;
   content: "";
+}
+
+.control__input[type="checkbox"]:disabled + .control__mark,
+.control__input[type="radio"]:disabled + .control__mark {
+  background-color: fade(@lightgrey, 50%);
+}
+
+.control__input[type="checkbox"]:disabled + .control__mark::before {
+  background-image: url("../img/svg/icons/tick-grey.svg");
+}
+
+.control__input[type="radio"]:disabled + .control__mark::before {
+  background-color: @grey;
 }
 
 .control__label {

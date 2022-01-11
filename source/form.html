@@ -178,7 +178,7 @@
         <fieldset class="feedback-form__fieldset feedback-form__fieldset--textarea form-fieldset form-fieldset--textarea">
           <legend class="form-fieldset__legend">Опишите свои эмоции</legend>
           <label class="visually-hidden" for="feedback-message">Напишите здесь свою историю</label>
-          <textarea class="input-field input-field--message" name="message" id="feedback-message">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="form-fieldset__textarea input-field input-field--message" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях" id="feedback-message"></textarea>
         </fieldset>
         <div class="feedback-form__submit-wrapper">
           <button class="feedback-form__button button button--secondary button--form" type="submit">Отправить форму</button>
@@ -191,7 +191,7 @@
     </section>
   </main>
   <footer class="page__footer page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__inner">
       <div class="page-footer__logo">
         <a class="logo logo--dark" href="index.html" aria-label="Логотип сайта Pink">
           <svg class="logo__img logo__img--secondary" width="145" height="40" role="img">
@@ -238,6 +238,7 @@
       </div>
     </div>
   </footer>
+  <!-- Для открытия модального окна добавить класс modal с модификатором open -->
   <!-- Modal window. Success -->
   <div class="modal modal--success">
     <div class="modal__message-wrapper modal__message-wrapper--success">
