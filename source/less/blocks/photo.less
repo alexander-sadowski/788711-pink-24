@@ -9,6 +9,7 @@
     text-decoration: none;
 
     &::before {
+      z-index: 1;
       position: absolute;
       top: 0;
       right: 20px;
@@ -33,9 +34,26 @@
   }
 
   &:focus {
+    outline: none;
+
     .photo__image {
-      box-shadow: 0 0 0 2px @darkblue;
+      outline: 2px solid @pink;
+    }
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+
+    .photo__image {
       outline: none;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    .photo__image {
+      outline: 2px solid @pink;
     }
   }
 
@@ -69,7 +87,7 @@
   &--featured-photo {
     box-sizing: border-box;
     width: 280px;
-    .justify-box(auto; auto);
+    margin: 0 auto;
     padding-right: 10px;
     padding-bottom: 19px;
   }
@@ -186,7 +204,7 @@
   .photo {
     &--featured-photo {
       width: 1200px;
-      .justify-box(auto; auto);
+      margin: 0 auto;
 
       &::before {
         top: 54px;

@@ -53,12 +53,12 @@
   <main class="page__main page-main">
     <h1 class="visually-hidden">Сайт приложения Pink</h1>
     <section class="page-main__intro intro">
-      <div class="intro__wrapper">
+      <div class="intro__inner">
         <div class="intro__header">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
         </div>
         <div class="intro__marketplace marketplace">
-          <a class="marketplace__button button button--primary" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <a class="marketplace__button button button--primary" href="https://www.apple.com/ru/app-store/" target="_blank">Скачать приложение</a>
           <ul class="marketplace__list marketplace-list">
             <li class="marketplace-list__item">
               <a class="marketplace-list__link marketplace-link" href="https://www.apple.com/ru/app-store/" target="_blank">
@@ -127,7 +127,7 @@
       <div class="reviews__wrapper slider">
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
-            <blockquote class=" review">
+            <blockquote class="review">
               <cite class="review__author-name">Павел Павлов</cite>
               <p class="review__author-info">27 лет, инженер</p>
               <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
@@ -176,6 +176,7 @@
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="tariffs__wrapper tariffs-slider">
+        <!-- Для показа первого тарифа добавить класс tariffs-slider__table с модификатором first-slide, третьего third-slide -->
         <table class="tariffs-slider__table tariffs-table">
           <thead>
             <tr>
@@ -199,17 +200,17 @@
               <td class="tariffs-table__cell tariffs-table__cell--top-left tariffs-table__cell--hidden">Розовый фильтр</td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--true" data-feature="Розовый фильтр">
-                  <span class="tariffs-table__hidden-text">Есть</span>
+                  <span class="visually-hidden">Есть</span>
                 </span>
               </td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--true" data-feature="Розовый фильтр">
-                  <span class="tariffs-table__hidden-text">Есть</span>
+                  <span class="visually-hidden">Есть</span>
                 </span>
               </td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--true" data-feature="Розовый фильтр">
-                  <span class="tariffs-table__hidden-text">Есть</span>
+                  <span class="visually-hidden">Есть</span>
                 </span>
               </td>
             </tr>
@@ -217,17 +218,17 @@
               <td class="tariffs-table__cell tariffs-table__cell--hidden">Смайлики</td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--false" data-feature="Смайлики">
-                  <span class="tariffs-table__hidden-text">Нет</span>
+                  <span class="visually-hidden">Нет</span>
                 </span>
               </td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--true" data-feature="Смайлики">
-                  <span class="tariffs-table__hidden-text">Есть</span>
+                  <span class="visually-hidden">Есть</span>
                 </span>
               </td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--true" data-feature="Смайлики">
-                  <span class="tariffs-table__hidden-text">Есть</span>
+                  <span class="visually-hidden">Есть</span>
                 </span>
               </td>
             </tr>
@@ -235,17 +236,17 @@
               <td class="tariffs-table__cell tariffs-table__cell--bottom-left tariffs-table__cell--hidden">Комментарии</td>
               <td class="tariffs-table__cell tariffs-table__cell--slider-bottom-left">
                 <span class="tariffs-table__feature tariffs-table__feature--false" data-feature="Комментарии">
-                  <span class="tariffs-table__hidden-text">Нет</span>
+                  <span class="visually-hidden">Нет</span>
                 </span>
               </td>
               <td class="tariffs-table__cell">
                 <span class="tariffs-table__feature tariffs-table__feature--false" data-feature="Комментарии">
-                  <span class="tariffs-table__hidden-text">Нет</span>
+                  <span class="visually-hidden">Нет</span>
                 </span>
               </td>
               <td class="tariffs-table__cell tariffs-table__cell--bottom-right">
                 <span class="tariffs-table__feature tariffs-table__feature--true" data-feature="Комментарии">
-                  <span class="tariffs-table__hidden-text">Есть</span>
+                  <span class="visually-hidden">Есть</span>
                 </span>
               </td>
             </tr>
@@ -265,7 +266,7 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__inner">
         <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
         <div class="contacts__item contacts__item--phone contact">
           <b class="contact__heading">Звоните:</b>
@@ -297,7 +298,7 @@
     </section>
   </main>
   <footer class="page__footer page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__inner">
       <div class="page-footer__logo">
         <a class="logo logo--dark" aria-label="Логотип сайта Pink">
           <svg class="logo__img logo__img--secondary" width="145" height="40" role="img">
