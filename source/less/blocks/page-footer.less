@@ -1,8 +1,10 @@
-.page-footer__wrapper {
+.page-footer__inner {
+  box-sizing: border-box;
   display: grid;
   justify-items: center;
   gap: 28px;
-  .justify-box(auto; auto);
+  width: 100%;
+  margin: 0 auto;
   padding: 30px 20px;
 }
 
@@ -11,9 +13,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer__wrapper {
-    box-sizing: border-box;
-    width: 660px;
+  .page-footer__inner {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 66px;
     padding-top: 26px;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__wrapper {
+  .page-footer__inner {
     width: 1200px;
     padding-top: 60px;
     padding-right: 125px;

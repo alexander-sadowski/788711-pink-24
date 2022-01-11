@@ -10,14 +10,25 @@
   }
 
   &:hover {
+    cursor: pointer;
+
     .button-reaction__icon {
       fill: fade(@pink, 60%);
     }
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px @darkblue;
+    outline: 2px solid @pink;
+    outline-offset: 4px;
+  }
+
+  &:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @pink;
+    outline-offset: 4px;
   }
 
   &:active {

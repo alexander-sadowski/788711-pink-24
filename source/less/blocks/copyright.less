@@ -22,7 +22,15 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px @darkblue;
+    outline: 2px solid @darkblue;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @darkblue;
   }
 
   &:active {

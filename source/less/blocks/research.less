@@ -10,7 +10,7 @@
   .research__inner {
     display: grid;
     grid-template-columns: 238px minmax(300px, 565px);
-    .justify-box(auto; auto);
+    margin: 0 auto;
     padding-top: 34px;
     padding-right: 20px;
     padding-bottom: 67px;
@@ -75,8 +75,17 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px @darkblue;
+      outline: 2px solid @pink;
+      outline-offset: 5px;
+    }
+
+    &:focus:not(:focus-visible) {
       outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid @pink;
+      outline-offset: 5px;
     }
 
     &:active {
